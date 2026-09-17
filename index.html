@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cronograma de Treino</title>
+    <style>
+        :root {
+            --primary: #d4ff00;
+            /* Verde limão/neon */
+            --bg: #121212;
+            --card-bg: #1e1e1e;
+            --text: #ffffff;
+            --text-dim: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .card p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .sets {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .rest {
+            margin-top: 20px;
+            text-align: center;
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 8px;
+            color: #ff4444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏋️‍♂️ CRONOGRAMA SEMANAL</h1>
+
+    <div class="container">
+        <!-- TREINO A -->
+        <div class="card">
+            <h2>Treino A: Peito e Tríceps</h2>
+            <p>Foco: Empurrar | Segunda e Quinta</p>
+            <ul>
+                <li>Supino Reto <span class="sets">4 x 10</span></li> <a
+                    href="//i.pinimg.com/originals/c2/77/96/c27796ca95253e95f1561dd3542f50e0.gif">exemplo</a>
+                <li>Supino Inclinado (Halter) <span class="sets">3 x 12</span></li> <a
+                    href="https://www.hipertrofia.org/blog/wp-content/uploads/2023/05/dumbbell-incline-bench-press.gif">exemplo</a>
+                <li>Crucifixo Máquina <span class="sets">3 x 15</span></li> <a
+                    href="https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/lever-seated-fly.gif">exemplo</a>
+                <li>Tríceps Corda <span class="sets">4 x 12</span></li> <a
+                    href="https://fitnessvolt.com/wp-content/uploads/2023/09/Cable-Rope-Tricep-Extension.gif">exemplo</a>
+                <li>Tríceps Testa <span class="sets">3 x 10</span></li> <a
+                    href="https://www.hipertrofia.org/blog/wp-content/uploads/2025/01/rosca-testa-com-barra2.gif">exemplo</a>
+            </ul>
+        </div>
+
+        <!-- TREINO B -->
+        <div class="card">
+            <h2>Treino B: Costas e Bíceps</h2>
+            <p>Foco: Puxar | Terça e Sexta</p>
+            <ul>
+                <li>Puxada Pulley <span class="sets">4 x 10</span></li>
+                <a href="https://i.pinimg.com/originals/28/89/f2/2889f2aec66e3a7c7b7ff2ab78675b77.gif">exemplo</a>
+                <li>Remada Curvada <span class="sets">3 x 12</span></li><a
+                    href="https://www.hipertrofia.org/blog/wp-content/uploads/2024/06/barbell-pendlay-row.gif">exemplo</a>
+                <li>Remada Baixa <span class="sets">3 x 15</span></li><a
+                    href="https://i.makeagif.com/media/7-18-2023/J-W5KX.gif">exemplo</a>
+                <li>Rosca Direta (Barra EZ) <span class="sets">4 x 10</span></li><a
+                    href="https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/rosca-biceps-direta-na-barra-ez.gif">exemplo</a>
+                <li>Rosca Martelo <span class="sets">3 x 12</span></li><a
+                    href="https://i.makeagif.com/media/3-06-2025/Vn7Gly.gif">exemplo</a>
+            </ul>
+        </div>
+
+        <!-- TREINO C -->
+        <div class="card">
+            <h2>Treino C: Pernas e Ombros</h2>
+            <p>Foco: Membros Inferiores | Quarta e Sábado</p>
+            <ul>
+                <li>Agachamento Livre <span class="sets">4 x 10</span></li><a
+                    href="https://media.tenor.com/3Id5iyj7kuUAAAAM/agachamento.gif">exemplo</a>
+                <li>Leg Press 45° <span class="sets">3 x 12</span></li><a
+                    href="https://media.tenor.com/HSQb1EjWC70AAAAM/legpress-treino-mestre.gif">exemplo</a>
+                <li>Cadeira Extensora <span class="sets">3 x 15</span></li><a
+                    href="https://i.makeagif.com/media/2-28-2023/fF4i6b.gif">exemplo</a>
+                <li>Desenvolvimento Arnold <span class="sets">4 x 10</span></li><a
+                    href="https://media.tenor.com/ZR-_3Mxq0gYAAAAM/arnold-press.gif">exemplo</a>
+                <li>Elevação Lateral <span class="sets">4 x 12</span></li><a
+                    href="https://i.makeagif.com/media/2-13-2018/rD06HT.gif">exemplo</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Domingo</h2>
+        <ul>
+            <li>Cardio Leve 20 Minutos</li><a
+                href="https://media.tenor.com/MHT4ej0V2z8AAAAM/yuri-alberto-knee-slide.gif">exemplo</a>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
